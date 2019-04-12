@@ -15,16 +15,13 @@ function textTipeValue() {
   if (Number.isNaN(food_input_value) == false) {
 
     //値を取り出す。
-    
-    alert(food_input_value);
-  
-  //数値ではない場合returnを返す
-  } else {
-    return;
+
+    food_input_value;
+
   };
 
 
-    //medical_expensesの値を取得
+  //medical_expensesの値を取得
   //値を０に設定する。
   let medical_input_value = 0;
 
@@ -38,16 +35,13 @@ function textTipeValue() {
   if (Number.isNaN(medical_input_value) == false) {
 
     //値を取り出す。
-    
-    alert(medical_input_value);
-  
-  //数値ではない場合returnを返す
-  } else {
-    return;
+
+    medical_input_value;
+
   };
 
 
-    //library_expensesの値を取得
+  //library_expensesの値を取得
   //値を０に設定する。
   let library_input_value = 0;
 
@@ -61,16 +55,13 @@ function textTipeValue() {
   if (Number.isNaN(library_input_value) == false) {
 
     //値を取り出す。
-    
-    alert(library_input_value);
-  
-  //数値ではない場合returnを返す
-  } else {
-    return;
+
+    library_input_value;
+
   };
 
 
-    //entertainment_expenses_oの値を取得
+  //entertainment_expenses_oの値を取得
   //値を０に設定する。
   let entertainment_o_input_value = 0;
 
@@ -84,16 +75,12 @@ function textTipeValue() {
   if (Number.isNaN(entertainment_o_input_value) == false) {
 
     //値を取り出す。
-    
-    alert(entertainment_o_input_value);
-  
-  //数値ではない場合returnを返す
-  } else {
-    return;
+    entertainment_o_input_value;
+
   };
 
 
-    //entertainment_expenses_pの値を取得
+  //entertainment_expenses_pの値を取得
   //値を０に設定する。
   let entertainment_p_input_value = 0;
 
@@ -107,16 +94,13 @@ function textTipeValue() {
   if (Number.isNaN(entertainment_p_input_value) == false) {
 
     //値を取り出す。
-    
-    alert(entertainment_p_input_value);
-  
-  //数値ではない場合returnを返す
-  } else {
-    return;
+
+    entertainment_p_input_value;
+
   };
 
 
-    //traveling_expensesの値を取得
+  //traveling_expensesの値を取得
   //値を０に設定する。
   let traveling_input_value = 0;
 
@@ -130,16 +114,13 @@ function textTipeValue() {
   if (Number.isNaN(traveling_input_value) == false) {
 
     //値を取り出す。
-    
-    alert(traveling_input_value);
-  
-  //数値ではない場合returnを返す
-  } else {
-    return;
+
+    traveling_input_value;
+
   };
 
 
-    //utilities_expensesの値を取得
+  //utilities_expensesの値を取得
   //値を０に設定する。
   let utilities_input_value = 0;
 
@@ -153,16 +134,14 @@ function textTipeValue() {
   if (Number.isNaN(utilities_input_value) == false) {
 
     //値を取り出す。
-    
-    alert(utilities_input_value);
-  
-  //数値ではない場合returnを返す
-  } else {
-    return;
+
+    utilities_input_value;
+
+    //数値ではない場合returnを返す
   };
 
 
-    //miscellaneous_expensesの値を取得
+  //miscellaneous_expensesの値を取得
   //値を０に設定する。
   let miscellaneous_input_value = 0;
 
@@ -176,16 +155,12 @@ function textTipeValue() {
   if (Number.isNaN(miscellaneous_input_value) == false) {
 
     //値を取り出す。
-    
-    alert(miscellaneous_input_value);
-  
-  //数値ではない場合returnを返す
-  } else {
-    return;
+    miscellaneous_input_value;
+
   };
 
 
-    //giftの値を取得
+  //giftの値を取得
   //値を０に設定する。
   let gift_input_value = 0;
 
@@ -199,17 +174,13 @@ function textTipeValue() {
   if (Number.isNaN(gift_input_value) == false) {
 
     //値を取り出す。
-    
-    alert(gift_input_value);
-  
-  //数値ではない場合returnを返す
-  } else {
-    return;
+    gift_input_value;
+
   };
 
 
 
-    //rewardの値を取得
+  //rewardの値を取得
   //値を０に設定する。
   let reward_input_value = 0;
 
@@ -223,13 +194,65 @@ function textTipeValue() {
   if (Number.isNaN(reward_input_value) == false) {
 
     //値を取り出す。
-    
-    alert(reward_input_value);
-  
-  //数値ではない場合returnを返す
-  } else {
-    return;
+    reward_input_value;
+
   };
+
+  //連想配列で値を纏める
+  let expenses_list = [{
+      name: "食費",
+      price: food_input_value
+    },
+    {
+      name: "医療費",
+      price: medical_input_value
+    },
+    {
+      name: "図書費",
+      price: library_input_value
+    },
+    {
+      name: "交際費（対外）",
+      price: entertainment_o_input_value
+    },
+    {
+      name: "交際費（私的）",
+      price: entertainment_p_input_value
+    },
+    {
+      name: "旅費交通費",
+      price: traveling_input_value
+    },
+    {
+      name: "水道光熱費",
+      price: utilities_input_value
+    },
+    {
+      name: "雑費",
+      price: miscellaneous_input_value
+    },
+    {
+      name: "贈答費",
+      price: gift_input_value
+    },
+    {
+      name: "ご褒美",
+      price: reward_input_value
+    },
+  ];
+
+  expenses_list.forEach(function (value) {
+
+    const count = value.price;
+
+    if (count > 0) {
+      alert(count);
+    } else {
+      return;
+    }
+
+  });
+
 };
 
 
