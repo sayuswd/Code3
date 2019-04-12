@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Allowance book</title>
+
+  <link rel="stylesheet" type="text/css" href="config/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="allowancebooks.css" />
+
+
+</head>
+
+<body>
+  <div class="allowancebooks">
+
+    <div class="allowancebooks_01">
+
+      <div class="food_expenses">
+        食費<br>
+        <input type="text" id="food">
+      </div>
+
+      <div class="medical_expenses">
+        医療費<br>
+        <input type="text" id="medical">
+      </div>
+
+      <div class="library_expenses">
+        図書費<br>
+        <input type="text" id="library">
+      </div>
+
+      <div class="entertainment_expenses_o">
+        交際費（対外）<br>
+        <input type="text" id="entertainment_o">
+      </div>
+
+      <div class="entertainment_expenses_p">
+        交際費（私的）<br>
+        <input type="text" id="entertainment_p">
+      </div>
+
+    </div>
+    <div class="allowancebooks_02">
+
+      <div class="traveling_expenses">
+        旅費交通費<br>
+        <input type="text" id="traveling">
+      </div>
+
+      <div class="utilities_expenses">
+        水道光熱費<br>
+        <input type="text" id="utilities_expenses">
+      </div>
+
+      <div class="miscellaneous_expenses">
+        雑費<br>
+        <input type="text" id="miscellaneous_expenses">
+      </div>
+
+      <div class="gift">
+        贈答費<br>
+        <input type="text" id="gift">
+      </div>
+
+      <div class="reward">
+        ご褒美<br>
+        <input type="text" id="reward">
+      </div>
+
+    </div>
+
+    <div class="expenses">
+      合計<br>
+      <p>合計を表示</p>
+    </div>
+
+  </div>
+
+</body>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script type="text/javascript" src="config/jquery-3.3.1.min.js"></script>
+<script src="allowancebooks.js"></script>
+
+</html>

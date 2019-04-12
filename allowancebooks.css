@@ -1,0 +1,29 @@
+body {
+  font-size: 20px;
+  color: #494343;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: floralwhite;
+}
+
+.allowancebooks {
+  margin-top: 30px;
+  display: inline-block;
+  font-size: 16px;
+  width: 800px;
+  height: 300px;
+}
+.allowancebooks_01 {
+  display: inline-block;
+}
+
+.allowancebooks_02 {
+  display: inline-block;
+}
+
+
+.allowancebooks .expenses {
+  font-size: 20px;
+  margin-top: 30px;
+  text-align: center;
+}
