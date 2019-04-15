@@ -145,20 +145,20 @@ function textTipeValue() {
   ];
 
   var sum = 0;
+  const expensesElement = document.querySelector('.expenses p');
 
   expenses_list.forEach(function (value) {
 
     const count = value.price;
-    sum += count;
 
-    //中身の値のチェック
+    //中身の値が数値かどうか確認する
+
     if (Number.isNaN(count) == false) {
-
+      //数値でかつ値が0より上の場合値を足す
       if (count > 0) {
-        alert(sum);
-      } else if (count == false) {
-        return;
-      } else {
+        sum += count;
+        expensesElement.innerHTML = sum + "円";
+      } else if (count == true) {
         return;
       }
     }
