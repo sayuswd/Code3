@@ -1,5 +1,15 @@
 function textTipeValue() {
 
+  let all_input_value = 0
+  //全ての値を取得
+  const all_input_name = document.querySelectorAll(".allowancebooks_01 input");
+  //1つずつ値を取得
+  all_input_name.forEach(function(price){
+  all_input_value = parseInt(price.value);
+  alert(all_input_value);
+  });
+
+
 
   //food_expensesの値を取得
   //値を０に設定する。
